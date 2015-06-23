@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<TITLE>Register</TITLE>
+<link rel="icon" href="image/log1.gif" type="image/gif" />
+<script type="text/javascript" src="micro_register.js"></script>
+<link href="micro_register.css" type="text/css" rel="stylesheet" />
+</HEAD>
+<BODY>
+<img src="imagenew/img1.jpg" class="img1"/>";
+<img src="imagenew/logo.gif" class="img2"/>";
+<form name="login" method="post" action="micro_register.php">
+	<fieldset>
+		<legend><strong>Register</strong></legend>
+		</br>
+		<p>Nickname: <input id="name" type="text" name="name_2"/>
+		<p>Password:  <input id="password" type="password" name="password_2"/>
+		<button type="submit" value="Submit" id="submit_2">Submit</button>
+		<div id = "hint">  (Hint: In order to ensure the safety of your account, please set your password to be 6 bit or more. Thank you!)</div>
+	</fieldset>
+<?php  include "micro_register.php"; ?>	
+</form>
+</BODY>
+</HTML>

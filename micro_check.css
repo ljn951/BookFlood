@@ -1,0 +1,177 @@
+body {
+		background-color: #361d07;
+		background-image: url(image/background2.jpg);
+		background-repeat: repeat-y;
+		background-position: center 0;
+		padding: 0px;
+		margin: 0px;
+		}
+#div1{
+		height: 50px;
+		background-image: url(image/background3.jpg);
+		background-repeat: repeat-x;
+		margin: 0px;
+		}
+#div2{		
+		background-image:url(image/img3.jpg);
+		width: 980px;
+		height: 302px;
+		margin: 0px auto;
+		}
+*{
+		margin: 0;
+		padding: 0;
+		}
+#div3{
+		position:relative;
+		background-color: white;
+		width: 980px;
+		margin: 0 auto;
+		padding: 0px;
+		}
+#left{
+		float: left;
+		}
+#div53{
+		margin: 30px 10px;
+		border-bottom: 2px #CCCCCC solid;
+		font-family:Georgia, serif;
+		font-style:italic;
+		font-size: 11px;
+		color: gray;
+		}
+#div53 div{
+		font-size: 15px;
+		width: 350px;
+		position: relative;
+		left: 580px;
+		margin: 5px;
+		}
+#div54{
+		width: 300px;
+		height: 5px;
+		position: relative;
+		left: 720px;
+		bottom: 60px; 
+		}
+#right{
+		float: right; 
+		}
+#div8{
+		clear: both;
+		float: left;
+		}
+#contain p{		
+		font-family:Georgia, serif;
+		font-size: 1.5em;
+		margin: 10px;
+		white-space: pre;
+		}
+#arrow{
+		width:18px;
+		height:15.6px;
+		}
+#pp{
+		font-family:Georgia, serif;
+		font-size: 8px;
+		color: gray;
+		font-style: italic;
+		white-space: pre;
+		}
+#logo2{
+		float:left;
+		position: relative;
+		top:55px;
+		}
+#button{
+		width:175px;
+		margin: 0 auto;
+		}
+
+p2{
+		margin: 0px;
+		font-family: Algerian;
+		font-style: italic;
+		font-size: 5em;
+		color: white;
+		position: relative;
+		right: -30px;
+		top: 10px;
+		}
+.p3{
+		font-family: Georgia, serif;
+		font-size: 1.5em;
+		color: white;
+		font-style: italic;
+		position: relative;
+		text-indent:1em;
+		top: 100px;
+		left: 630px;
+		width: 500px;
+		}
+
+button{
+		background-color: white;
+		border: 1px white solid;
+		}
+.logo {
+		width: 162px;
+		height: 54px;
+		}
+.img4{
+		width: 40px;
+		height: 170.333px;
+		}
+.img5{
+		width: 900px;
+		height: 40px;
+		}
+.img51{
+		width: 980px;
+		height: 40px;
+		}
+#group1{
+		width: 900px;
+		height:360px;
+		margin: 0 auto;
+		background-image: url(image/background4.jpg);
+		}
+#informations{
+		width: 650px;
+		float: left;
+		line-height: 36px;
+		overflow: hidden;
+		}
+.title{
+		font-family: Microsoft YaHei;
+		font-size: 34px;
+		color: white;
+		margin: 20px 30px 20px 30px;
+		}
+.introduction{
+		font-family: Microsoft YaHei;
+		font-size: 15px;
+		color: white;
+		margin: 0px 40px 10px 40px;
+		}
+.other{
+		border-top: 1px dashed #898989;
+		}
+#others{
+		margin: 0 40px 0 40px;
+		}
+.label{
+		font-family: Microsoft YaHei;
+		font-size: 15px;
+		color: #656464;
+		margin: 10px 20px 0 0;
+		}
+.infor{
+		font-family: Microsoft YaHei;
+		font-size: 15px;
+		color: white;
+		}
+.poster{
+		float:right;
+		}
+	

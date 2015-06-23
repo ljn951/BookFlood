@@ -1,0 +1,32 @@
+<appwizard>
+<introduction>
+<name>WSS项目管理系统</name>
+<author>WSS</author>
+
+
+<description>
+<![CDATA[
+<p>WSS(White Shark System)基于PMI®全球项目管理标准，专注于项目管理规范 
+性、易用性、以及视觉效果。</p>
+<p>主要功能：项目管理、任务管理、工时管理、工作日志管理、邮件提醒等。</p>
+         ]]>
+</description>
+</introduction>
+<platform>
+<services>
+<service name="wssfile"  params="public">Storage</service>
+<service>Mysql</service>
+</services>
+<appconfig>
+<tpl>
+<![CDATA[
+name: <<appname>>
+version: <<version>>
+             ]]>
+</tpl>
+</appconfig>
+</platform>
+<code>
+<initScript>login.php</initScript>
+</code>
+</appwizard>
