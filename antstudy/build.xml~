@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<project name="junit-test" default="run-test">
+
+	<property name="src.dir" location="src" ></property>
+	<property name="test.src.dir" location="test" ></property>
+	<property name="build.dir" location="build" ></property>
+	<property name="build.classes" location="${build.dir}/classes" ></property>
+	<property name="build.test.dir" location="${build.dir}/test" ></property>
+	<property name="build.test.classes" location="${build.test.dir}/classes" ></property>
+	<property name="build.test.report" location="${build.test.dir}/report" ></property>
+	<property name="junit.lib.dir" location="lib" ></property>
+	
+	<!-- 编译测试类依赖的classpath  -->
+	<path id="compile-test-path">
+		<pathelement location="${build.classes}"/>
+			<fileset dir="${junit.lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	
+	
+	<!-- 运行测试类需要的classpath -->
+	<path id="run-test-path">
+		<path refid="compile-test-path"></path>
+		<pathelement location="${build.test.classes}" />
+	</path>
+	
+	<target name="clean">
+		<delete dir="${build.dir}"></delete>
+		<mkdir dir="${build.dir}"/>
+		<mkdir dir="${build.classes}"/>
+		<mkdir dir="${build.test.dir}"/>
+		<mkdir dir="${build.test.classes}"/>
+		<mkdir dir="${build.test.report}"/>
+	</target>
+	
+	<!-- 编译源文件 -->
+	<target name="compile" depends="clean">
+		<javac srcdir="${src.dir}" destdir="${build.classes}" failonerror="true"></javac>
+	</target>
+
+	<!-- 编译测试文件 -->
+
+	
+	<!-- 运行测试类 -->
+	<target name="run-test" depends="compile_test">
+		<junit haltonfailure="false">	<!-- 设置运行失败是是否继续执行 （如果为true，则导出报表也会失败）  -->
+			<classpath refid="run-test-path"></classpath>
+			<formatter type="xml" /> <!-- xml格式的输出 -->
+			<!-- 单个测试 -->
+		<!--<test name="com.zf.test.HelloTest"></test> -->
+			<!-- 批量测试 -->
+			<batchtest	todir="${build.test.report}"> <!-- 并指定了输出目录 -->
+				<fileset dir="${build.test.classes}" includes="**/Test*" />
+			</batchtest>
+		</junit>
+		
+		<!-- 设置任务报告 -->
+		<junitreport todir="${build.test.report}">
+			<fileset dir="${build.test.report}"> 
+				<include name="TEST-*.xml"/>
+			</fileset>
+			<report format="frames" todir="${build.test.report}/html" />
+		</junitreport>
+		
+	</target>
+	
+</project>
