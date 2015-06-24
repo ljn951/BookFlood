@@ -1,0 +1,60 @@
+body{		
+		background-image: url(image/background1.jpg);
+    	background-repeat: repeat;
+		margin: 0px;
+		padding: 0px;
+		}
+p {
+		font-weight: bold;
+		position: relative;
+		left: 30px;
+		font-family: Georgia, serif;
+		white-space: pre;
+		color: gray;
+		}
+legend{
+		font-family: Georgia, serif;
+		color: gray;
+		font-size: 1.2em;
+		}
+#form{
+		padding: 0px;
+		margin: 0;
+		width: 350px;
+		position: absolute;
+		}
+.logo {
+		width: 300px;
+		height: 96px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		}
+#submit_1{
+		width:80px;
+		height:30px;
+		position: relative;
+		right: 20px;
+		top: 20px;
+		font-family: Georgia, serif;
+		}
+#login{
+		width:80px;
+		height:30px;
+		position: relative;
+		top: 20px;
+		left: 35px;
+		font-family: Georgia, serif;
+		}
+#hint{
+		position:relative;
+		right: 20px;
+		width: 290px;
+		}
+#hint p{
+		font-family: Georgia, serif;
+		color: gray;
+		font-size: 0.6em;
+		text-indent: 1em;
+		white-space: normal;
+		}
